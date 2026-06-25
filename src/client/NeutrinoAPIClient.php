@@ -40,7 +40,7 @@ class NeutrinoAPIClient
      * @param string $apiKey
      * @param string|null $baseURL
      */
-    public function __construct(string $userID, string $apiKey, string $baseURL = null)
+    public function __construct(string $userID, string $apiKey, ?string $baseURL = null)
     {
         $this->userID = $userID;
         $this->apiKey = $apiKey;
