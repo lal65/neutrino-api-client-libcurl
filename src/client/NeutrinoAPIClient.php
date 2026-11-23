@@ -40,11 +40,11 @@ class NeutrinoAPIClient
      * @param string $apiKey
      * @param string|null $baseURL
      */
-    public function __construct(string $userID, string $apiKey, ?string $baseURL = null)
+    public function __construct(string $userID, string $apiKey, string $baseURL = MULTICLOUD_ENDPOINT)
     {
         $this->userID = $userID;
         $this->apiKey = $apiKey;
-        $this->baseURL = (isset($baseURL)) ? $baseURL : MULTICLOUD_ENDPOINT;
+        $this->baseURL = $baseURL;
     }
 
     /**
